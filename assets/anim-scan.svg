@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 200" width="100%" height="200">
+  <defs>
+    <linearGradient id="skyx" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f2440"/>
+      <stop offset="55%" stop-color="#1c3f63"/>
+      <stop offset="100%" stop-color="#2c5d7c"/>
+    </linearGradient>
+    <linearGradient id="fieldx" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f6b3a"/>
+      <stop offset="100%" stop-color="#1e4a26"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8be9ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#8be9ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="120" fill="url(#skyx)"/>
+  <rect x="0" y="120" width="1600" height="80" fill="url(#fieldx)"/>
+
+  <!-- crop rows viewed from above -->
+  <g opacity="0.5">
+    <g fill="#3a7d45">
+<rect x="0" y="128" width="1600" height="4" />
+<rect x="0" y="137" width="1600" height="4" />
+<rect x="0" y="146" width="1600" height="4" />
+<rect x="0" y="155" width="1600" height="4" />
+<rect x="0" y="164" width="1600" height="4" />
+<rect x="0" y="173" width="1600" height="4" />
+<rect x="0" y="182" width="1600" height="4" />
+<rect x="0" y="191" width="1600" height="4" />
+    </g>
+  </g>
+  <!-- vertical row separators for a grid feel -->
+  <g stroke="#173a1e" stroke-width="1" opacity="0.35">
+<line x1="0" y1="120" x2="0" y2="200" />
+<line x1="40" y1="120" x2="40" y2="200" />
+<line x1="80" y1="120" x2="80" y2="200" />
+<line x1="120" y1="120" x2="120" y2="200" />
+<line x1="160" y1="120" x2="160" y2="200" />
+<line x1="200" y1="120" x2="200" y2="200" />
+<line x1="240" y1="120" x2="240" y2="200" />
+<line x1="280" y1="120" x2="280" y2="200" />
+<line x1="320" y1="120" x2="320" y2="200" />
+<line x1="360" y1="120" x2="360" y2="200" />
+<line x1="400" y1="120" x2="400" y2="200" />
+<line x1="440" y1="120" x2="440" y2="200" />
+<line x1="480" y1="120" x2="480" y2="200" />
+<line x1="520" y1="120" x2="520" y2="200" />
+<line x1="560" y1="120" x2="560" y2="200" />
+<line x1="600" y1="120" x2="600" y2="200" />
+<line x1="640" y1="120" x2="640" y2="200" />
+<line x1="680" y1="120" x2="680" y2="200" />
+<line x1="720" y1="120" x2="720" y2="200" />
+<line x1="760" y1="120" x2="760" y2="200" />
+<line x1="800" y1="120" x2="800" y2="200" />
+<line x1="840" y1="120" x2="840" y2="200" />
+<line x1="880" y1="120" x2="880" y2="200" />
+<line x1="920" y1="120" x2="920" y2="200" />
+<line x1="960" y1="120" x2="960" y2="200" />
+<line x1="1000" y1="120" x2="1000" y2="200" />
+<line x1="1040" y1="120" x2="1040" y2="200" />
+<line x1="1080" y1="120" x2="1080" y2="200" />
+<line x1="1120" y1="120" x2="1120" y2="200" />
+<line x1="1160" y1="120" x2="1160" y2="200" />
+<line x1="1200" y1="120" x2="1200" y2="200" />
+<line x1="1240" y1="120" x2="1240" y2="200" />
+<line x1="1280" y1="120" x2="1280" y2="200" />
+<line x1="1320" y1="120" x2="1320" y2="200" />
+<line x1="1360" y1="120" x2="1360" y2="200" />
+<line x1="1400" y1="120" x2="1400" y2="200" />
+<line x1="1440" y1="120" x2="1440" y2="200" />
+<line x1="1480" y1="120" x2="1480" y2="200" />
+<line x1="1520" y1="120" x2="1520" y2="200" />
+<line x1="1560" y1="120" x2="1560" y2="200" />
+<line x1="1600" y1="120" x2="1600" y2="200" />
+  </g>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="80" cy="20" r="1.4" opacity="0.8"/>
+    <circle cx="220" cy="45" r="1.1" opacity="0.6"/>
+    <circle cx="400" cy="15" r="1.3" opacity="0.7"/>
+    <circle cx="640" cy="35" r="1.2" opacity="0.6"/>
+    <circle cx="900" cy="18" r="1.5" opacity="0.8"/>
+    <circle cx="1180" cy="40" r="1.1" opacity="0.55"/>
+    <circle cx="1420" cy="22" r="1.3" opacity="0.7"/>
+  </g>
+
+  <!-- satellite, gently bobbing, top right -->
+  <g transform="translate(1420,55)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="4s" repeatCount="indefinite"/>
+      <rect x="-10" y="-6" width="20" height="12" rx="2" fill="#d7dee6"/>
+      <rect x="-28" y="-3" width="16" height="6" fill="#8bb7d9"/>
+      <rect x="12" y="-3" width="16" height="6" fill="#8bb7d9"/>
+      <circle cx="0" cy="0" r="3" fill="#ffe28a"/>
+    </g>
+    <!-- dashed downlink to ground scan point -->
+    <line x1="0" y1="6" x2="-620" y2="140" stroke="#8be9ff" stroke-width="1.4" stroke-dasharray="4 6" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" values="0;-40" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <!-- data pulses travelling up from ground to satellite -->
+    <circle r="3.5" fill="#8be9ff">
+      <animateMotion path="M-620,140 L0,6" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- scanning drone flying back and forth -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="60,0;1500,0;60,0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" dur="10s" repeatCount="indefinite"/>
+
+    <!-- downward scan cone -->
+    <polygon points="-46,20 46,20 90,88 -90,88" fill="url(#beam)"/>
+
+    <!-- drone body -->
+    <g transform="translate(0,10)">
+      <circle cx="-26" cy="-10" r="7" fill="#243447"/>
+      <circle cx="26" cy="-10" r="7" fill="#243447"/>
+      <circle cx="-26" cy="10" r="7" fill="#243447"/>
+      <circle cx="26" cy="10" r="7" fill="#243447"/>
+      <line x1="-26" y1="-10" x2="26" y2="10" stroke="#3a4d63" stroke-width="4"/>
+      <line x1="26" y1="-10" x2="-26" y2="10" stroke="#3a4d63" stroke-width="4"/>
+      <rect x="-14" y="-8" width="28" height="16" rx="4" fill="#556b85"/>
+      <circle cx="0" cy="0" r="3.5" fill="#8be9ff">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite"/>
+      </circle>
+      <!-- rotors spinning (simple flicker to suggest motion blur) -->
+      <ellipse cx="-26" cy="-10" rx="12" ry="3" fill="#c7d3de" opacity="0.5">
+        <animate attributeName="opacity" values="0.2;0.6;0.2" dur="0.25s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="26" cy="-10" rx="12" ry="3" fill="#c7d3de" opacity="0.5">
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="0.25s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="-26" cy="10" rx="12" ry="3" fill="#c7d3de" opacity="0.5">
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="0.25s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="26" cy="10" rx="12" ry="3" fill="#c7d3de" opacity="0.5">
+        <animate attributeName="opacity" values="0.2;0.6;0.2" dur="0.25s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+  </g>
+
+  <!-- ground scan highlight line that sweeps in sync with drone -->
+  <rect y="120" width="6" height="80" fill="#8be9ff" opacity="0.6">
+    <animate attributeName="x" values="60;1500;60" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.25;0.6" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>

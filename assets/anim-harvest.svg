@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d6"/>
+      <stop offset="100%" stop-color="#f3e2a0"/>
+    </linearGradient>
+    <linearGradient id="grnd3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d1b84f"/>
+      <stop offset="100%" stop-color="#8a9a3f"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="140" height="95" fill="url(#sky3)"/>
+  <rect x="0" y="95" width="140" height="45" fill="url(#grnd3)"/>
+
+  <!-- basket -->
+  <g transform="translate(108,108)">
+    <path d="M-16,0 L16,0 L12,22 L-12,22 Z" fill="#8a5a2e"/>
+    <path d="M-16,0 L16,0" stroke="#6b4522" stroke-width="2"/>
+    <!-- falling grains into basket -->
+    <circle cx="0" cy="-30" r="3" fill="#e8cf6e">
+      <animate attributeName="cy" values="-30;8" dur="1.8s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.8s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="6" cy="-30" r="3" fill="#d8b64f">
+      <animate attributeName="cy" values="-30;8" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-6" cy="-30" r="3" fill="#e8cf6e">
+      <animate attributeName="cy" values="-30;8" dur="1.8s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.8s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- swaying stalks (background, unharvested) -->
+  <g transform="translate(20,120)">
+    <g><animateTransform attributeName="transform" type="rotate" values="-7 0 0;7 0 0;-7 0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" dur="2.2s" repeatCount="indefinite"/>
+    <path d="M0,0 Q4,-20 0,-38" stroke="#8a7a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="0" cy="-36" rx="3.5" ry="7" fill="#d8b64f"/></g>
+  </g>
+  <g transform="translate(38,124)">
+    <g><animateTransform attributeName="transform" type="rotate" values="-8 0 0;8 0 0;-8 0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" dur="1.9s" begin="0.2s" repeatCount="indefinite"/>
+    <path d="M0,0 Q-3,-18 0,-34" stroke="#8a7a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="0" cy="-32" rx="3.2" ry="6.5" fill="#d8b64f"/></g>
+  </g>
+
+  <!-- the stalk being harvested (cut and falls) -->
+  <g transform="translate(62,118)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="0 0 0;0 0 0;70 0 0;70 0 0;0 0 0"
+        keyTimes="0;0.55;0.75;0.95;1"
+        calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"
+        dur="2.4s" repeatCount="indefinite"/>
+      <path d="M0,0 Q4,-20 0,-38" stroke="#8a7a2e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="0" cy="-36" rx="4" ry="8" fill="#d8b64f"/>
+    </g>
+  </g>
+
+  <!-- sickle swinging -->
+  <g transform="translate(78,100)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="30 0 0;-45 0 0;30 0 0"
+        keyTimes="0;0.5;1"
+        calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+        dur="2.4s" repeatCount="indefinite"/>
+      <path d="M0,0 L14,4" stroke="#5c4326" stroke-width="3" stroke-linecap="round"/>
+      <path d="M14,4 Q26,6 24,-8 Q22,-18 12,-14" stroke="#c0c4c8" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
