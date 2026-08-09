@@ -241,4 +241,4 @@ The long term vision of TATVA is to become India's most comprehensive farmer cen
 </div>
 =======
 # Annadata
->>>>>>> 1773d9d558e55e81bc416543f12ba721a3e7d4d1
+
