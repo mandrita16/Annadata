@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <div align="center">
 
 <img src="assets/rice-field-hero.svg" width="100%" alt="Rice field swaying in the wind" />
