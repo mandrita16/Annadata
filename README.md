@@ -239,6 +239,3 @@ The long term vision of TATVA is to become India's most comprehensive farmer cen
 <img src="assets/rice-field-hero.svg" width="100%" alt="Rice field swaying in the wind" />
 
 </div>
-=======
-# Annadata
-
